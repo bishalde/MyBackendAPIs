@@ -5,7 +5,7 @@ const router = express.Router()
 // const signup=require('./Routes/signup')
 const users=require('./Routes/users')
 
-// require("./db/connection")
+require("./db/connection")
 
 router.get("/", (req, res) => {
     res.status(200).json({
