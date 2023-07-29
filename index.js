@@ -20,7 +20,14 @@ app.get("/", (req, res) => {
     );
   });
 
-  app.use('/projecttree',require('./ProjectTree/projectTree'))
+app.use('/projecttree',require('./ProjectTree/projectTree'))
+
+app.get('*', (req, res) => {
+    res.status(404).json({
+        "message": "Page Not Found"
+    })
+})
+
 
   app.listen(port, () => {
     console.log(`MyBackendAPIS's is listening at ${process.env.WEB_URL}`);
