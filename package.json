@@ -1,22 +1,26 @@
 {
   "name": "mybackendapis",
   "version": "1.0.0",
-  "description": "This is my backend server",
+  "description": "This is my Projects Backend API Website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bishalde/mybackendapis.git"
+    "url": "git+https://github.com/bishalde/MyBackendAPIs.git"
   },
+  "keywords": [
+    "API"
+  ],
   "author": "Bishal De",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bishalde/mybackendapis/issues"
+    "url": "https://github.com/bishalde/MyBackendAPIs/issues"
   },
-  "homepage": "https://github.com/bishalde/mybackendapis#readme",
+  "homepage": "https://github.com/bishalde/MyBackendAPIs#readme",
   "dependencies": {
+    "bcrypt": "^5.1.0",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
