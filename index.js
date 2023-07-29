@@ -19,7 +19,8 @@ app.get("/", (req, res) => {
       }
     );
   });
-  
+
+  app.use('/projecttree',require('./ProjectTree/projectTree'))
 
   app.listen(port, () => {
     console.log(`MyBackendAPIS's is listening at ${process.env.WEB_URL}`);
