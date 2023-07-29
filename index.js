@@ -24,7 +24,7 @@ app.use('/projecttree',require('./ProjectTree/projectTree'))
 
 app.get('*', (req, res) => {
     res.status(404).json({
-        "message": "Page Not Found"
+        "error": "Page Not Found"
     })
 })
 
