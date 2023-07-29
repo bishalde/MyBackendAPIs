@@ -1,9 +1,9 @@
 const express = require("express")
 const router = express.Router()
 
-require("./db/connection")
 
-const users = require("./routes/users")
+
+// const users = require("./routes/users")
 
 router.get("/", (req, res) => {
     res.status(200).json({
@@ -12,6 +12,6 @@ router.get("/", (req, res) => {
   });
 
 
-router.get("/profile/:username",users)
+// router.get("/profile/:username",users)
 
 module.exports = router;
