@@ -2,12 +2,14 @@ const express = require("express")
 const cors = require('cors')
 require("dotenv").config()
 
+const errorHandler =require("./error")
 
 const app = express()
 const port = process.env.PORT || 3000
 
 
 app.use(cors()) 
+app.use(errorHandler)
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
